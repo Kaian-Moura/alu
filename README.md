@@ -94,7 +94,7 @@ Projeto desenvolvido utilizando simulador de circuitos digitais.
 ## 🎥 Vídeo explicativo
 
 📌 Assista ao vídeo explicando o funcionamento da ALU:
-https://youtube.com/seu-video
+[https://youtube.com/seu-video](https://youtu.be/8wgfl1krLK4)
 
 ---
 
