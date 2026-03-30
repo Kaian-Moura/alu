@@ -1,9 +1,9 @@
 # Alu - 8 bits
-# 🧠 ALU de 8 bits
+# ALU de 8 bits
 
 Projeto de uma Unidade Lógica e Aritmética (ALU) de 8 bits desenvolvido utilizando lógica digital.
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 Este projeto consiste na implementação de uma ALU capaz de realizar operações aritméticas e lógicas utilizando circuitos digitais.
 
@@ -16,7 +16,7 @@ Além disso, utiliza:
 
 ---
 
-## ⚙️ Operações implementadas
+## Operações implementadas
 
 A ALU é capaz de realizar as seguintes operações:
 
@@ -33,7 +33,7 @@ A ALU é capaz de realizar as seguintes operações:
 
 ---
 
-## 🧩 Estrutura do projeto
+## Estrutura do projeto
 
 A ALU foi construída de forma modular, dividida nos seguintes componentes:
 
@@ -70,7 +70,7 @@ Responsável por escolher qual operação será executada.
 
 ---
 
-## 🔄 Funcionamento da ALU
+## Funcionamento da ALU
 
 A ALU recebe:
 - Dois operandos (AC e N)
@@ -83,7 +83,7 @@ Com base no seletor:
 
 ---
 
-## 🖥️ Ferramenta utilizada
+## Ferramenta utilizada
 
 Projeto desenvolvido utilizando simulador de circuitos digitais.
 
@@ -91,14 +91,14 @@ Projeto desenvolvido utilizando simulador de circuitos digitais.
 
 ---
 
-## 🎥 Vídeo explicativo
+## Vídeo explicativo
 
 📌 Assista ao vídeo explicando o funcionamento da ALU:
-[https://youtube.com/seu-video](https://youtu.be/8wgfl1krLK4)
+[Vídeo aqui](https://youtu.be/8wgfl1krLK4)
 
 ---
 
-## 🚀 Como executar
+## Como executar
 
 1. Abra o simulador
 2. Carregues o circuito
@@ -108,14 +108,14 @@ Projeto desenvolvido utilizando simulador de circuitos digitais.
 
 ---
 
-## 📌 Observações
+## Observações
 
 - O projeto foi feito de forma modular para facilitar entendimento
 - O foco principal foi entender o funcionamento interno de uma ALU
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido por:
 - Kaian Moura
