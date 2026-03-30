@@ -1,4 +1,3 @@
-# Alu - 8 bits
 # ALU de 8 bits
 
 Projeto de uma Unidade Lógica e Aritmética (ALU) de 8 bits desenvolvido utilizando lógica digital.
@@ -18,8 +17,6 @@ Além disso, utiliza:
 
 ## Operações implementadas
 
-A ALU é capaz de realizar as seguintes operações:
-
 | Operação       | Descrição |
 |----------------|----------|
 | Soma           | AC + N |
@@ -35,8 +32,6 @@ A ALU é capaz de realizar as seguintes operações:
 
 ## Estrutura do projeto
 
-A ALU foi construída de forma modular, dividida nos seguintes componentes:
-
 ### 🔹 Somador
 Implementado inicialmente em 1 bit e expandido para 8 bits.
 
@@ -44,12 +39,10 @@ Implementado inicialmente em 1 bit e expandido para 8 bits.
 Baseado em complemento de dois utilizando o somador.
 
 ### 🔹 Multiplicador
-Realiza multiplicação de 8 bits, separando resultado em:
 - AC → parte menos significativa (LSB)
 - MQ → parte mais significativa (MSB)
 
 ### 🔹 Divisor
-Responsável por calcular:
 - MQ → quociente
 - AC → resto
 
@@ -58,15 +51,15 @@ Responsável por calcular:
 - XOR
 
 ### 🔹 Shift lógico
-- Shift left (desloca bits para esquerda)
-- Shift right (desloca bits para direita)
+- Shift left
+- Shift right
 
 ### 🔹 Seletor de operação (MUX)
 Responsável por escolher qual operação será executada.
 
 ### 🔹 Registradores
-- AC (Acumulador)
-- MQ (Multiplicador/Quociente)
+- AC
+- MQ
 
 ---
 
@@ -83,39 +76,95 @@ Com base no seletor:
 
 ---
 
-## Ferramenta utilizada
+## 🧠 Fundamentação lógica
 
-Projeto desenvolvido utilizando simulador de circuitos digitais.
+### Mapa de Karnaugh (XOR)
 
-- Digital
+| A | B | Saída |
+|---|---|------|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+Equação:
+S = A'B + AB'
 
 ---
 
-## Vídeo explicativo
+### Mapa de Karnaugh (NAND)
 
-📌 Assista ao vídeo explicando o funcionamento da ALU:
-[Vídeo aqui](https://youtu.be/8wgfl1krLK4)
+| A | B | Saída |
+|---|---|------|
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+Equação:
+S = (AB)'
 
 ---
 
-## Como executar
+## Exemplos matemáticos
+
+### Soma
+AC = 00000001  
+N  = 00000011  
+Resultado = 00000100  
+
+### Subtração
+AC = 00000101  
+N  = 00000011  
+Resultado = 00000010  
+
+### Multiplicação
+AC = 00000011  
+N  = 00000010  
+Resultado = 00000110  
+
+### Divisão
+AC = 00000110  
+N  = 00000010  
+MQ = 00000011  
+AC = 00000000  
+
+### XOR
+AC = 10101010  
+N  = 11001100  
+Resultado = 01100110  
+
+### NAND
+AC = 10101010  
+N  = 11001100  
+Resultado = 01011111  
+
+### Shift Left
+AC = 00001101  
+Resultado = 00011010  
+
+### Shift Right
+AC = 00001101  
+Resultado = 00000110  
+
+---
+
+## Vídeo
+
+https://youtu.be/8wgfl1krLK4
+
+---
+
+##  Como executar
 
 1. Abra o simulador
-2. Carregues o circuito
-3. Insira valores(1 ou 0)
-4. Escolha a operação no seletor
-5. Observe o resultado nos registradores
-
----
-
-## Observações
-
-- O projeto foi feito de forma modular para facilitar entendimento
-- O foco principal foi entender o funcionamento interno de uma ALU
+2. Carregue o circuito
+3. Insira valores
+4. Escolha a operação
+5. Observe o resultado
 
 ---
 
 ## Autor
 
-Desenvolvido por:
-- Kaian Moura
+Kaian Moura
